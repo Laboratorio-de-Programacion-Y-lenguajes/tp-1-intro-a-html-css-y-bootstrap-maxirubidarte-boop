@@ -4,12 +4,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Acerca de mí - Mi Blog</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="assets/styles.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"> <!-- Aca importa la libreria de Bootstrap -->
+    <link rel="stylesheet" href="assets/styles.css"> <!-- Aca importa el CSS personalizado -->
 </head>
 <body>
     <!-- Navbar (copiar de index.html) -->
-    <nav class="navbar navbar-expand-md navbar-dark bg-primary sticky-top">
+    <nav class="navbar navbar-expand-md navbar-dark bg-primary sticky-top"> 
+        <!--"navbar-expand-md" indica que se extienda en pantallas medianas,pero que en celular esconda el menu-->
+        <!--"bg-primary" es una clase de Bootstrap para fondo de color primario (azul por defecto)-->
+        <!--"sticky-top" es una clase de Bootstrap para que el navbar se mantenga fijo en la parte superior al hacer scroll-->
         <div class="container">
             <a class="navbar-brand fw-bold" href="index.html">Mi Blog</a>
         </div>
@@ -20,16 +23,20 @@
         <div class="container">
             <div class="row">
                 <!-- Sidebar: Avatar (COMPLETAR) -->
-                <aside class="col-md-3 mb-4">
+                <aside class="col-md-3 mb-4">              
                     <img src="assets/images/avatar.jpg" class="img-fluid rounded-circle mb-3" alt="Avatar" style="max-width: 200px;">
                     <h3>Tu Nombre</h3>
                     <p class="text-muted">Desarrollador web &amp; escritor</p>
+                    <!-- "col-md-3" es mi barra lateral,le especifica que ocupe 3 columnas (25% del ancho) -->
+                    <!--(img-fluid) es una clase de Bootstrap para que la imagen se adapte al contenedor
+                     y la segunda (rounded-circle) la corta en forma de circulo (tipico de un avatar)-->
                 </aside>
 
                 <!-- Contenido principal (COMPLETAR) -->
-                <article class="col-md-9">
+                <article class="col-md-9">                 
                     <h1>Acerca de mí</h1>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit...</p>
+                    <!-- "col-md-9" es el área principal, le especifica que ocupe 9 columnas (75% del ancho)-->
                     <!-- TODO: agregar más párrafos, habilidades, etc. -->
                 </article>
             </div>
@@ -37,7 +44,7 @@
     </main>
 
     <!-- Footer -->
-    <footer class="bg-dark text-white py-4 mt-5">
+    <footer class="bg-dark text-white py-4 mt-5">         
         <div class="container text-center">
             <p>&copy; 2026 Mi Blog.</p>
         </div>
