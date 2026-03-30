@@ -9,14 +9,33 @@
 </head>
 <body>
     <!-- Navbar (copiar de index.html) -->
-    <nav class="navbar navbar-expand-md navbar-dark bg-primary sticky-top"> 
-        <!--"navbar-expand-md" indica que se extienda en pantallas medianas,pero que en celular esconda el menu-->
-        <!--"bg-primary" es una clase de Bootstrap para fondo de color primario (azul por defecto)-->
-        <!--"sticky-top" es una clase de Bootstrap para que el navbar se mantenga fijo en la parte superior al hacer scroll-->
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark sticky-top">
         <div class="container">
-            <a class="navbar-brand fw-bold" href="index.html">Mi Blog</a>
+            <a class="navbar-brand fw-bold d-flex align-items-center" href="index.html">
+                <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" fill="currentColor" class="bi bi-terminal-fill me-2 text-primary" viewBox="0 0 16 16">
+                    <path d="M0 3a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v10a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2zm9.5 5.5h-3a.5.5 0 0 0 0 1h3a.5.5 0 0 0 0-1m-6.354-.354a.5.5 0 1 0 .708.708l1.5-1.5a.5.5 0 0 0 0-.708l-1.5-1.5a.5.5 0 1 0-.708.708L4.293 8z"/>
+                </svg>
+                    <span>Mi Blog</span>
+            </a>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menuPrincipal">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+             <div class="collapse navbar-collapse" id="menuPrincipal">
+                    <ul class="navbar-nav ms-auto"> <li class="nav-item">
+                        <a class="nav-link" href="index.html">Inicio</a>
+                    </li>
+                     <li class="nav-item">
+                         <a class="nav-link active" href="about.html">Sobre mí</a>
+                     </li>
+                    <li class="nav-item">
+                          <a class="nav-link" href="contact.html">Contacto</a>
+                        </li>
+                 </ul>
+             </div>
         </div>
-    </nav>
+    </nav> 
 
     <!-- Contenido -->
     <main class="py-5">
