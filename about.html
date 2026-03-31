@@ -1,17 +1,47 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Acerca de mí - Mi Blog</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="assets/styles.css">
+    <!-- Aca importa la libreria de Bootstrap -->
+    <link rel="stylesheet" href="assets/styles.css"> <!-- Aca importa el CSS personalizado -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
 </head>
+
 <body>
     <!-- Navbar (copiar de index.html) -->
-    <nav class="navbar navbar-expand-md navbar-dark bg-primary sticky-top">
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark sticky-top">
         <div class="container">
-            <a class="navbar-brand fw-bold" href="index.html">Mi Blog</a>
+            <a class="navbar-brand fw-bold d-flex align-items-center" href="index.html">
+                <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" fill="currentColor"
+                    class="bi bi-terminal-fill me-2 text-primary" viewBox="0 0 16 16">
+                    <path
+                        d="M0 3a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v10a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2zm9.5 5.5h-3a.5.5 0 0 0 0 1h3a.5.5 0 0 0 0-1m-6.354-.354a.5.5 0 1 0 .708.708l1.5-1.5a.5.5 0 0 0 0-.708l-1.5-1.5a.5.5 0 1 0-.708.708L4.293 8z" />
+                </svg>
+                <span>Mi Blog</span>
+            </a>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menuPrincipal"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="menuPrincipal">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="about.html">Sobre mí</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contacto</a>
+                    </li>
+                </ul>
+            </div>
         </div>
     </nav>
 
@@ -19,30 +49,86 @@
     <main class="py-5">
         <div class="container">
             <div class="row">
-                <!-- Sidebar: Avatar (COMPLETAR) -->
-                <aside class="col-md-3 mb-4">
-                    <img src="assets/images/avatar.jpg" class="img-fluid rounded-circle mb-3" alt="Avatar" style="max-width: 200px;">
-                    <h3>Tu Nombre</h3>
-                    <p class="text-muted">Desarrollador web &amp; escritor</p>
+
+                <aside class="col-md-3 mb-4 text-center">              
+                    <img src="assets/images/avatar.jpg.jpeg" class="img-fluid rounded-circle mb-3 shadow"
+                        alt="Avatar de Maxi" style="max-width: 200px; height: 200px; object-fit: cover;">
+
+                    <h3 class="fw-bold">Maxi Rubidarte</h3>
+                    <p class="text-muted small">Estudiante de Lic. en Sistemas</p>
+                    <div class="mt-3">
+                        <span class="badge bg-primary px-3 py-2 rounded-pill mb-2">UNTDF / Ushuaia</span>
+                    </div>
                 </aside>
 
-                <!-- Contenido principal (COMPLETAR) -->
-                <article class="col-md-9">
-                    <h1>Acerca de mí</h1>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit...</p>
-                    <!-- TODO: agregar más párrafos, habilidades, etc. -->
+                <article class="col-md-9">                
+                    <h1 class="display-5 fw-bold mb-4 text-primary">Acerca de mí</h1>
+
+                    <p class="lead">
+                        ¡Hola! Soy Maximiliano Rubidarte, tengo 20 años y estoy cursando la <strong>Licenciatura en
+                            Sistemas</strong> en la Universidad Nacional de Tierra del Fuego.
+                    </p>
+
+                    <p>
+                        Actualmente estoy en el 3er año, dándole pelea a materias como <strong>Estadística</strong> y
+                        Base
+                        de Datos. Me interesa mucho el desarrollo de software y la lógica detrás de cada proyecto. Mi
+                        lenguaje principal es Java, y este blog es parte de lo que vengo aprendiendo de
+                        <strong>HTML, CSS y Bootstrap</strong> para que las cosas no solo funcionen, sino que se vean
+                        bien.
+                    </p>
+
+                    <h3 class="h5 fw-bold mt-4">No todo es código</h3>
+                    <p>
+                        Cuando cierro el VS Code, trato de despejar la cabeza haciendo deporte. Salgo a
+                        <strong>correr por la ciudad</strong> seguido, con la meta clara de prepararme para correr
+                        alguna maratón en el futuro. Es mi forma de resetear después de tantas horas de código.
+                    </p>
+
+                    <p>
+                        En mis ratos libres, sigo viciando con la <strong>HP Victus</strong>, pero además de los
+                        competitivos, me gustan mucho los juegos de terror estilo <strong>Resident Evil</strong>.
+                        Y si me sobra un rato, me cuelgo aprendiendo a dibujar manga, aunque todavía no me sale nada
+                        decente. ¡Pero no pierdo la esperanza!;
+                        practicando para que algún día los personajes de <strong>One Piece</strong> me salgan con la
+                        esencia de Oda.
+                    </p>
+
+                    <div class="mt-4 p-3 bg-light rounded shadow-sm border">
+                        <h4 class="h6 fw-bold mb-3">Mis Habilidades Actuales</h4>
+                        <span class="badge bg-primary p-2 mb-2 me-1"><i class="bi bi-code-slash me-1"></i> Java</span>
+                        <span class="badge bg-success p-2 mb-2 me-1"><i class="bi bi-git me-1"></i> Git</span>
+                        <span class="badge bg-info text-dark p-2 mb-2 me-1"><i class="bi bi-cpu me-1"></i> Hardware
+                            Enth.</span>
+                    </div>
                 </article>
             </div>
         </div>
     </main>
 
     <!-- Footer -->
-    <footer class="bg-dark text-white py-4 mt-5">
+    <footer class="bg-dark text-white py-5 mt-5 border-top border-primary">
         <div class="container text-center">
-            <p>&copy; 2026 Mi Blog.</p>
+            <div class="row">
+                <div class="col-md-12 mb-3">
+                    <h5 class="fw-bold">Maximiliano Rubidarte</h5>
+                    <p class="small text-muted">Estudiante de Lic. en Sistemas - UNTDF</p>
+                </div>
+                <div class="col-md-12 mb-3">
+                    <a href="https://github.com/maxirubidarte-boop" class="text-white me-3 text-decoration-none">
+                        <i class="bi bi-github"></i> GitHub
+                    </a>
+                    <a href="https://instagram.com/rubidarte.maxi" class="text-white text-decoration-none">
+                        <i class="bi bi-instagram"></i> Instagram
+                    </a>
+                </div>
+            </div>
+            <hr class="my-4 border-secondary w-50 mx-auto">
+            <p class="small mb-0">2026 Mi Blog. Todos los derechos reservados.</p>
         </div>
     </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
+
 </html>
